@@ -1,0 +1,11 @@
+select * from employees,departments -- employess ve departments tablolarındaki bütün bilgileri görüntüleme sorgusu.
+
+select FirstName, LastName, Salary from employees -- employees tablosundaki FirstName, LastName, Salary kolonlarını seçerek tablolarını görüntüleme 
+
+select distinct departmentid from employees -- employees tablosundaki departmanları benzersiz olarak listeler
+
+SELECT * FROM employees,departments WHERE departmentname = 'IT' -- IT departmanında çalışanların bilgilerini getiren sorgu
+
+select * from employees order by salary desc -- Çalışanları maaşlarına göre büyükten küçüğe sıralayan sorgu
+
+select firstname || ' '|| lastname as FULLNAME from employees --Çalışanların FirstName ve LastName alanlarını birleştirerek, tam adlarını içeren yeni bir kolon oluşturan sorgu 
